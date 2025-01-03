@@ -1,0 +1,48 @@
+
+.flights-bg {
+    width: 100%;
+    height: 250px;
+    background-image: url('../assets/plane.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2em;
+    color: white;
+  }
+  
+  .flights-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .content-wrapper {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .flights-bg h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .flights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
